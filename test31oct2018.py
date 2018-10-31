@@ -16,7 +16,7 @@ print (currDate.day)
 
 print (currDate.strftime('%d %b, %Y'))
 
-print (currDate.strftime('%A %d %B, %Y'))
+print (currDate.strftime('Please attend our event %A %d %B, %Y'))
 
 
 
