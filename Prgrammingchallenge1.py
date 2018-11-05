@@ -18,7 +18,8 @@ Participant = 0
 
 while Participant != " ":
     Participant = input("What is your name? ")
-    Participants.append(Participant)
+    if Participant != " ":
+        Participants.append(Participant)
     
 Participants.sort()
 
