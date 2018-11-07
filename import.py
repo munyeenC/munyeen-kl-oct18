@@ -4,9 +4,9 @@ Created on Wed Nov  7 10:15:45 2018
 
 @author: munyeen.chong
 """
-"""
-import csv
 
+import csv
+"""
 myCSVFile = open("data/demo.csv","r")
 dataFromFile = csv.reader(myCSVFile)
 
@@ -25,7 +25,9 @@ with open(fileName,accessmode) as myCSVFile:
     dataFromFile = csv.reader(myCSVFile)
 
     for row in dataFromFile:
-        print(row)
+        print('|'.join(row))
+#        for values in row:
+#            print(values)
     
 myCSVFile.close()
 
