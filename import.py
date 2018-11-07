@@ -4,7 +4,7 @@ Created on Wed Nov  7 10:15:45 2018
 
 @author: munyeen.chong
 """
-
+"""
 import csv
 
 myCSVFile = open("data/demo.csv","r")
@@ -14,6 +14,18 @@ print(dataFromFile)
 
 for row in dataFromFile:
     print(row)
+    
+myCSVFile.close()
+"""
+
+fileName = "data/demo.csv"
+accessmode = "r"
+
+with open(fileName,accessmode) as myCSVFile:
+    dataFromFile = csv.reader(myCSVFile)
+
+    for row in dataFromFile:
+        print(row)
     
 myCSVFile.close()
 
