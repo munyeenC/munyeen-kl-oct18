@@ -20,4 +20,8 @@ dog3 = Dog("doggie3", 3)
 def get_biggest_number(*args):
     return max(args)
 
-print("The oldest dog is {} years old.".format(get_biggest_number(dog1.age, dog2.age, dog3.age)))
+#print("The oldest dog is {} years old.".format(get_biggest_number(dog1.age, dog2.age, dog3.age)))
+
+print(f"The oldest dog is {get_biggest_number(dog1.age, dog2.age, dog3.age)} years old.")
+
+print(dog1.species)
